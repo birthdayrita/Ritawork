@@ -15,16 +15,17 @@
     padding: 10px 20px;
     font-size: 20px;
     border: 0;
-    background: #154fa7;
+    background: #048ba3;
     color: #fff;
     font-weight: 700;
     letter-spacing: 2px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .button:hover{
-    background-color: #d5e3f8;
+    background-color: #00e1ff;
+    color: rgb(102, 99, 99);
 }
 
 .ad-component {
@@ -35,7 +36,7 @@
     left: calc(50% - 300px);
     width: 600px;
     height: 600px;
-    background: rgb(255, 255, 255);
+    background: rgb(236, 249, 252);
     border-radius: 5px;
     z-index: 9;
 }
