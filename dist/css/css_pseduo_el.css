@@ -11,4 +11,21 @@
   width: 80%;
   height: 100%;
   margin: auto;
+}
+
+.sat-hi {
+  padding: 10px;
+}
+.sat-hi::before {
+  content: "David ";
+  color: red;
+  font-size: 20px;
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  display: inline-block;
+}
+.sat-hi::after {
+  content: " Afterrrrrrr";
+  color: blue;
 }/*# sourceMappingURL=css_pseduo_el.css.map */
