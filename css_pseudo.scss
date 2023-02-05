@@ -12,37 +12,34 @@
     font-size: 30px;
     font-weight: 600;
 
-    // &:hover {
-    //     background: blue;
-    //     color: #fff;
-    // }
-
-    .hover-demo:hover {
+    &:hover {
         background: blue;
         color: #fff;
     }
+}
 
-    .large-checked:checked {
-        width: 200px;
-        height: 200px;
-    }
+.large-checked:checked {
+    width: 200px;
+    height: 200px;
+}
 
-    .block .item {
+.block {
+    .item {
         color: red;
     }
 
-    .block :not(.item) {
+    :not(.item) {
         color: yellow;
     }
+}
 
-    .nth-child {
-        width: 80%;
-        background: #dedede;
-        margin: 10px auto;
-        list-style-type: none;
-    }
+.nth-child {
+    width: 80%;
+    background: #dedede;
+    margin: 10px auto;
+    list-style-type: none;
 
-    .nth-child li {
+    li {
         height: 50px;
         background: blue;
         color: #fff;
@@ -50,27 +47,40 @@
         display: flex;
         align-items: center;
         padding: 5px;
-    }
 
-    .nth-child li:nth-child(2) {
-        color: red;
-        justify-content: center;
+        &:nth-child(2) {
+            color: red;
+            justify-content: center;
+        }
     }
+}
 
-    .student {
-        width: 80%;
-        margin: 10px auto;
-        border-spacing: 0;
-        border-collapse: collapse;
-    }
 
-    .student td,
-    .student th {
+.student {
+    width: 80%;
+    margin: 10px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    td,
+    th {
         border: 1px solid #000;
         padding: 10px;
     }
 
-    .student tbody tr:nth-child(even) td {
-        background: #dedede;
+    tbody {
+        tr:nth-child(even) {
+
+            // even = 2n
+            td {
+                background: #dedede;
+            }
+        }
+
+        tr:last-child {
+            td {
+                background: yellow;
+            }
+        }
     }
 }
